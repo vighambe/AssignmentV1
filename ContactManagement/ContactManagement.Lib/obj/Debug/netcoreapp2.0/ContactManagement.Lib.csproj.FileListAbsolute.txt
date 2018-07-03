@@ -1,0 +1,8 @@
+F:\SourceCode\GitHubRepo\Assignment\ContactManagement\ContactManagement.Lib\bin\Debug\netcoreapp2.0\ContactManagement.Lib.deps.json
+F:\SourceCode\GitHubRepo\Assignment\ContactManagement\ContactManagement.Lib\bin\Debug\netcoreapp2.0\ContactManagement.Lib.dll
+F:\SourceCode\GitHubRepo\Assignment\ContactManagement\ContactManagement.Lib\bin\Debug\netcoreapp2.0\ContactManagement.Lib.pdb
+F:\SourceCode\GitHubRepo\Assignment\ContactManagement\ContactManagement.Lib\obj\Debug\netcoreapp2.0\ContactManagement.Lib.csproj.CoreCompileInputs.cache
+F:\SourceCode\GitHubRepo\Assignment\ContactManagement\ContactManagement.Lib\obj\Debug\netcoreapp2.0\ContactManagement.Lib.AssemblyInfoInputs.cache
+F:\SourceCode\GitHubRepo\Assignment\ContactManagement\ContactManagement.Lib\obj\Debug\netcoreapp2.0\ContactManagement.Lib.AssemblyInfo.cs
+F:\SourceCode\GitHubRepo\Assignment\ContactManagement\ContactManagement.Lib\obj\Debug\netcoreapp2.0\ContactManagement.Lib.dll
+F:\SourceCode\GitHubRepo\Assignment\ContactManagement\ContactManagement.Lib\obj\Debug\netcoreapp2.0\ContactManagement.Lib.pdb

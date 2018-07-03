@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "19743d2a-227b-4a60-af83-69aed7872836",
+		"name": "ContactManagement_Assignment",
+		"description": "ContactManagement_Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllContacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSpecificContact_Valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSpecificContact_InValid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSpecificContact_Valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Id1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"firstName\": \"FirstName_12\",\n    \"lastName\": \"LastName_12\",\n    \"email\": \"FirstName_12.LastName_12@test.com\",\n    \"phoneNumber\": \"1111111134\",\n    \"status\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_NewContact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"FirstName_1290\",\n    \"lastName\": \"LastName_1290\",\n    \"email\": \"FirstName_12.LastName_1290@test.com\",\n    \"phoneNumber\": \"9011534816\",\n    \"status\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_NewContact InvalidName_Length",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"FirstName_1290_FirstName_1290_FirstName_1290\",\n    \"lastName\": \"LastName_1290\",\n    \"email\": \"FirstName_12.LastName_1290@test.com\",\n    \"phoneNumber\": \"9011534816\",\n    \"status\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_NewContact InvalidEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"FirstName_1290\",\n    \"lastName\": \"LastName_1290\",\n    \"email\": \"FirstName_12.LastName_1290\",\n    \"phoneNumber\": \"9011534816\",\n    \"status\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_NewContact _InvalidData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"\",\n    \"lastName\": \"\",\n    \"email\": \"FirstName_12.LastName_1290@test.com\",\n    \"phoneNumber\": \"9011534816\",\n    \"status\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
